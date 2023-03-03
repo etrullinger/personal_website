@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: 'News Cycle';
+}
+
+header,
+footer {
+  flex: none;
+}
+
+main {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+header {
+  display: block;
+  height: 100px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  padding-left: 0.5em;
+}
+
+/* Following section is for all top nav bar styling */
+
+.main-nav {
+  font-weight: bold;
+  background-color: gainsboro;
+}
+
+.nav-home,
+.nav-about,
+.nav-portfolio {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.5em;
+}
+
+.nav-home a,
+.nav-about a,
+.nav-portfolio a {
+  text-decoration: none;
+  display: block;
+  color: indianred;
+  padding: 0.25em 0.5em;
+}
+
+.nav-home a:hover,
+.nav-about a:hover,
+.nav-portfolio a:hover {
+  background-color: white;
+  box-shadow: 0 2px 5px -1px;
+}
+
+/* Following section is for homepage styling */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  font-size: 25px;
+  padding: 1em 2em 2em 2em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+#michelle {
+  display: flex;
+  justify-content: right;
+  padding-top: 0.5em;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.intro {
+  height: 375px;
+  width: 250px;
+  margin-right: 2em;
+}
+
+/* Following section is for all footer styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: gainsboro;
+  padding: 1em 0.5em;
+  min-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+h3, footer a {
+  color: indianred;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Following section is for About page styling */
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid gainsboro;
+  padding: 1em 1em;
+}
+
+.hobbies img {
+  width: 400px;
+  height: auto;
+}
+
+.hobby-name {
+  padding-bottom: 0.5em;
+}
+
+.hobby {
+  padding-right: 1.5em;
+}
+
+/* Following section is for Portfolio page styling */
+
+.project-list {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project {
+  border: 2px solid gainsboro;
+  padding: 1em 3em;
+  margin: 1em 3em;
+}
+
+.project img {
+  width: 500px;
+  padding: 0.75em 0;
+}
+
+.project-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .quote {
+      width: 800px;
+  }
+}
+
+@media (min-height: 865px) {
+  .footer-homepage {
+      position: fixed;
+      bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .hobbies {
+      width: 800px;
+  }
+}
